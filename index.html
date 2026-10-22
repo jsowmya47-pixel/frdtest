@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendzone | Friendship Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <p class="tag">THE ULTIMATE FRIENDSHIP GAME</p>
+    <h1>FRIEND<span>ZONE</span></h1>
+    <p class="subtitle">How real is your friendship? 👀</p>
+
+    <section class="panel">
+      <label for="playerName">Enter your name</label>
+      <input id="playerName" maxlength="24"
+        placeholder="Your nickname">
+
+      <div id="quiz"></div>
+
+      <button id="submitBtn">REVEAL MY SCORE</button>
+      <p id="result" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+      <h2>🏆 Friendship Leaderboard</h2>
+      <p class="hint">Scores saved on this browser</p>
+      <ol id="leaderboard"></ol>
+      <button id="clearBtn" class="secondary">
+        Clear local scores
+      </button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
